@@ -1,0 +1,6 @@
+{
+    "dart.flutterShowEmulators": "always",
+    "dart.flutterHotReloadOnSave": "manualIfDirty",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500
+}

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:god_aarti_app/View/Term%20of%20Use/tou_page.dart';
 
 class ThirdOnboardingPage extends StatelessWidget {

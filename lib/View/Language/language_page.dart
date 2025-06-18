@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
 import '../../Widgets/custom_next_button.dart';
 import '../Onboarding/onboarding_first.dart';
 
@@ -112,7 +110,10 @@ class _LanguagePageState extends State<LanguagePage> {
             ),
             GestureDetector(
               onTap: () {
-                Get.to(OnboardingFirst());
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => OnboardingFirst()),
+                );
               },
               child: CustomNextButton(text: 'Next'),
             ),

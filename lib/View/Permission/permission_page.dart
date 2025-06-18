@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:god_aarti_app/View/Get%20Started/get_started_page.dart';
 import 'package:god_aarti_app/Widgets/custom_next_button.dart';
 
@@ -87,7 +86,10 @@ class _PermissionPageState extends State<PermissionPage> {
               /// CONTINUE BUTTON
               Center(
                 child: InkWell(
-                  onTap: () => Get.off(GetStartedPage()),
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => GetStartedPage()),
+                  ),
                   child: CustomNextButton(text: "Continue"),
                 ),
               ),

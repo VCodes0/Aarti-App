@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:god_aarti_app/View/Rate%20US/rate_us_page.dart';
 
 class GetStartedPage extends StatelessWidget {

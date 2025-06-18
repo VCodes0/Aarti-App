@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:god_aarti_app/View/Onboarding/third_onboarding_page.dart';
 
 class OnboardingSecond extends StatelessWidget {
@@ -42,7 +41,12 @@ class OnboardingSecond extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(14.0),
                 child: GestureDetector(
-                  onTap: () => Get.to(ThirdOnboardingPage()),
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ThirdOnboardingPage(),
+                    ),
+                  ),
                   child: Image.asset("assets/02next.png", fit: BoxFit.cover),
                 ),
               ),

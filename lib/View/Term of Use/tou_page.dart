@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:god_aarti_app/Widgets/custom_next_button.dart';
 
 import '../Permission/permission_page.dart';
@@ -97,7 +96,12 @@ class TermsOfUsePage extends StatelessWidget {
             // Agree Button
             Center(
               child: InkWell(
-                onTap: () => Get.to(PermissionPage()),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PermissionPage()),
+                  );
+                },
                 child: CustomNextButton(text: 'Agree'),
               ),
             ),

@@ -42,7 +42,10 @@ class ThirdOnboardingPage extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(14.0),
                 child: GestureDetector(
-                  onTap: () => Get.to(TermsOfUsePage()),
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TermsOfUsePage()),
+                  ),
                   child: Image.asset("assets/o3next.png", fit: BoxFit.cover),
                 ),
               ),

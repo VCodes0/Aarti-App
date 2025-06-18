@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:god_aarti_app/View/Onboarding/onboarding_second.dart';
 
 class OnboardingFirst extends StatelessWidget {
@@ -27,7 +26,10 @@ class OnboardingFirst extends StatelessWidget {
               right: 0,
               bottom: 0,
               child: GestureDetector(
-                onTap: () => Get.to(OnboardingSecond()),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => OnboardingSecond()),
+                ),
                 child: Image.asset("assets/o1_png.png", fit: BoxFit.cover),
               ),
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:god_aarti_app/View/Home/home_page.dart';
+import 'package:god_aarti_app/View/Get%20Started/get_started_page.dart';
 import 'package:god_aarti_app/Widgets/custom_next_button.dart';
 
 class PermissionPage extends StatefulWidget {

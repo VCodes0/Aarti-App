@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CustomNextButton extends StatelessWidget {
   String text;
   CustomNextButton({super.key, required this.text});

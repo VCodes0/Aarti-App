@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:god_aarti_app/View/Rate%20US/rate_us_page.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({super.key});
@@ -36,7 +39,15 @@ class GetStartedPage extends StatelessWidget {
           Positioned(
             top: mq.height * 0.37,
             right: mq.width * 0.15,
-            child: Image.asset("assets/Rate US.png"),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RateUsPage()),
+                );
+              },
+              child: Image.asset("assets/Rate US.png"),
+            ),
           ),
           Positioned(
             bottom: mq.height * 0.02,

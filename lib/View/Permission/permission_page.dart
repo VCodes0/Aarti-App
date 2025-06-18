@@ -87,7 +87,7 @@ class _PermissionPageState extends State<PermissionPage> {
               /// CONTINUE BUTTON
               Center(
                 child: InkWell(
-                  onTap: () => Get.to(HomePage()),
+                  onTap: () => Get.off(GetStartedPage()),
                   child: CustomNextButton(text: "Continue"),
                 ),
               ),

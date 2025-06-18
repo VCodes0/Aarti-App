@@ -2,5 +2,8 @@
     "dart.flutterShowEmulators": "always",
     "dart.flutterHotReloadOnSave": "manualIfDirty",
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 500
+    "files.autoSaveDelay": 500,
+    "cSpell.words": [
+        "Strated"
+    ]
 }

@@ -116,7 +116,7 @@ class _RateUsPageState extends State<RateUsPage> {
                         child: Text("Exit"),
                       ),
 
-                      InkWell(
+                      GestureDetector(
                         onTap: () => Navigator.pop(context),
                         child: CustomNextButton(text: "Go Back"),
                       ),

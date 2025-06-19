@@ -3,9 +3,14 @@ import 'package:god_aarti_app/Widgets/custom_next_button.dart';
 
 import '../Permission/permission_page.dart';
 
-class TermsOfUsePage extends StatelessWidget {
+class TermsOfUsePage extends StatefulWidget {
   const TermsOfUsePage({super.key});
 
+  @override
+  State<TermsOfUsePage> createState() => _TermsOfUsePageState();
+}
+
+class _TermsOfUsePageState extends State<TermsOfUsePage> {
   @override
   Widget build(BuildContext context) {
     final Size screenSize = MediaQuery.of(context).size;
@@ -95,7 +100,7 @@ class TermsOfUsePage extends StatelessWidget {
 
             // Agree Button
             Center(
-              child: InkWell(
+              child: GestureDetector(
                 onTap: () {
                   Navigator.push(
                     context,

@@ -2,9 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:god_aarti_app/View/Onboarding/third_onboarding_page.dart';
 
-class OnboardingSecond extends StatelessWidget {
+class OnboardingSecond extends StatefulWidget {
   const OnboardingSecond({super.key});
 
+  @override
+  State<OnboardingSecond> createState() => _OnboardingSecondState();
+}
+
+class _OnboardingSecondState extends State<OnboardingSecond> {
   @override
   Widget build(BuildContext context) {
     final mq = MediaQuery.of(context).size;

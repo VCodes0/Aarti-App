@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 
 import '../model/recently_played_model.dart';
 
@@ -32,7 +32,7 @@ class TrendingAartiProvider extends ChangeNotifier {
         log('Failed response: ${response.statusCode}');
       }
     } catch (e) {
-      log('Error fetching recently played data: $e');
+      log('Error fetching trending data: $e');
     } finally {
       _isLoading = false;
       notifyListeners();

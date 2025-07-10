@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../widgets/selection_card_widget.dart';
 import '../Home/home_screen.dart';
 import '../Rate Us/rate_us_screen.dart';

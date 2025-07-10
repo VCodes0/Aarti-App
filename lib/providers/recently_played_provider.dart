@@ -3,6 +3,7 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../model/recently_played_model.dart';
 
@@ -27,6 +28,8 @@ class RecentlyPlayedProvider extends ChangeNotifier {
       if (response.statusCode == 200 && response.data != null) {
         List<dynamic> decodeData = jsonDecode(response.data);
         _recentlyPlayed = RecentlyPlayed.getRecentPlayed(decodeData);
+        SharedPreferences sh = await SharedPreferences.getInstance();
+        sh.setString('recentlyPlayed', response.data);
         notifyListeners();
       } else {
         log('Failed response: ${response.statusCode}');

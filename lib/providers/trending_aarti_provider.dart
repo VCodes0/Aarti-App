@@ -19,8 +19,6 @@ class TrendingAartiProvider extends ChangeNotifier {
 
   Future<void> getTrendingAartiData() async {
     _isLoading = true;
-    notifyListeners();
-
     try {
       final response = await dio.get(url);
 

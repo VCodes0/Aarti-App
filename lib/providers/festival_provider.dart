@@ -18,8 +18,6 @@ class FestivalProvider extends ChangeNotifier {
 
   Future<void> getFestivalAartiData() async {
     _isLoading = true;
-    notifyListeners();
-
     try {
       final response = await dio.get(url);
 

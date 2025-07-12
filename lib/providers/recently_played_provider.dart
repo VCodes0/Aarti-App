@@ -20,7 +20,6 @@ class RecentlyPlayedProvider extends ChangeNotifier {
 
   Future<void> getRecentlyPlayedData() async {
     _isLoading = true;
-    notifyListeners();
 
     try {
       final response = await dio.get(url);
